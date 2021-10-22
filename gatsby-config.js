@@ -11,8 +11,17 @@ module.exports = {
         spaceId: "zftkd6qhq6hg",
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      },
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
   ],
 };
